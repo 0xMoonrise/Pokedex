@@ -2,6 +2,7 @@ package src
 
 import (
 	"time"
+	"fmt"
 )
 
 type cacheEntry struct {
@@ -9,6 +10,6 @@ type cacheEntry struct {
 	data 	  []byte
 }
 
-func NewCache() {
-	
+func NewCache(input string) string {
+	return fmt.Sprintf("%s", input)
 }
